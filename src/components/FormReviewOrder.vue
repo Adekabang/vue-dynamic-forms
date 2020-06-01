@@ -104,9 +104,12 @@
     },
     methods: {
       submit () {
-          this.$emit('update', {
-          chocolate: this.form.chocolate,
-          otherTreat: this.form.otherTreat
+        this.$emit('update', {
+          data:{
+            chocolate: this.form.chocolate,
+            otherTreat: this.form.otherTreat
+          },
+          valid: true
         })
       }
     }
